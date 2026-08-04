@@ -3,79 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Convert Markdown to PNG, JPG, SVG, or a focused full-page preview. Free, local, and account-free.">
-    <title>Markdown to Image — Free local Markdown rendering</title>
-    <link rel="stylesheet" href="assets/site.css?v=20260801">
+    <meta name="description" content="A free, local Markdown to image Chrome extension. Export Markdown as PNG, JPG, or SVG, copy images, and print full-page previews to PDF.">
+    <meta name="theme-color" content="#172033">
+    <link rel="canonical" href="https://arieseven.github.io/markdown-to-image-site/">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/icon48.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="assets/icon128.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Markdown to Image">
+    <meta property="og:title" content="Markdown to Image — Free, local Chrome extension">
+    <meta property="og:description" content="Turn Markdown into PNG, JPG, SVG, or a full-page preview without uploading your document to a developer-operated service.">
+    <meta property="og:url" content="https://arieseven.github.io/markdown-to-image-site/">
+    <meta property="og:image" content="https://arieseven.github.io/markdown-to-image-site/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Markdown to Image Chrome extension with a Markdown editor and local export workflow">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Markdown to Image — Free, local Chrome extension">
+    <meta name="twitter:description" content="Export Markdown as PNG, JPG, SVG, or a PDF-ready full-page preview directly in Chrome.">
+    <meta name="twitter:image" content="https://arieseven.github.io/markdown-to-image-site/assets/og-image.png">
+
+    <title>Markdown to Image Chrome Extension — Free &amp; Local</title>
+    <link rel="stylesheet" href="assets/site.css?v=20260804-2">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Markdown to Image",
+      "description": "A free Chrome extension that renders Markdown locally and exports PNG, JPG, SVG, or a full-page preview for PDF printing.",
+      "url": "https://arieseven.github.io/markdown-to-image-site/",
+      "downloadUrl": "https://chromewebstore.google.com/detail/markdown-to-image/oicohknclaabjbdcjhcddaklacoehlhi",
+      "sameAs": [
+        "https://github.com/arieseven/mkd2img",
+        "https://chromewebstore.google.com/detail/markdown-to-image/oicohknclaabjbdcjhcddaklacoehlhi"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Markdown converter",
+      "operatingSystem": "Google Chrome",
+      "browserRequirements": "Requires Google Chrome with Manifest V3 extension support",
+      "softwareVersion": "2.0.0",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "image": "https://arieseven.github.io/markdown-to-image-site/assets/og-image.png",
+      "screenshot": "https://arieseven.github.io/markdown-to-image-site/assets/product-preview.webp",
+      "featureList": [
+        "Local Markdown rendering",
+        "PNG export",
+        "JPG export",
+        "SVG export",
+        "Copy generated PNG to the clipboard",
+        "Full-page preview with table of contents",
+        "Print or save the full-page preview as PDF"
+      ]
+    }
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
-        <a class="brand" href="index.html"><span class="brand-mark">M↓</span><span data-product-name>Markdown to Image</span></a>
+        <a class="brand" href="index.html" aria-label="Markdown to Image home">
+            <span class="brand-mark" aria-hidden="true">M↓</span>
+            <span data-product-name>Markdown to Image</span>
+        </a>
         <nav class="site-nav" aria-label="Primary navigation">
             <a href="#features">Features</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#faq">FAQ</a>
             <a href="privacy.html">Privacy</a>
-            <a href="support.html">Support</a>
-            <a class="nav-primary" data-store-link href="#" hidden>Install extension</a>
+            <a class="nav-primary" data-store-link href="https://chromewebstore.google.com/detail/markdown-to-image/oicohknclaabjbdcjhcddaklacoehlhi">Install extension</a>
         </nav>
     </header>
 
     <main id="main">
-        <section class="hero">
-            <div>
-                <p class="eyebrow">Free · Local · No account</p>
-                <h1>Markdown in. Polished image out.</h1>
-                <p class="hero-copy">Turn Markdown into PNG, JPG, SVG, PDF-ready pages, or a focused browser preview. Your document content stays on your device.</p>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy-column">
+                <p class="eyebrow">Free Chrome extension · Version 2.0.0</p>
+                <h1 id="hero-title">Turn Markdown into polished images — locally.</h1>
+                <p class="hero-copy">Markdown to Image is a free Chrome extension for pasting or opening <code>.md</code> and <code>.txt</code> files. Export PNG, JPG, or SVG, or open a full-page preview and print it to PDF.</p>
                 <div class="hero-actions">
-                    <a class="primary-link" data-store-link href="#" hidden>Install from Chrome Web Store</a>
-                    <a class="secondary-link" href="privacy.html">Read the privacy policy</a>
+                    <a class="primary-link" data-store-link href="https://chromewebstore.google.com/detail/markdown-to-image/oicohknclaabjbdcjhcddaklacoehlhi">Install from Chrome Web Store</a>
+                    <a class="secondary-link" href="#how-it-works">See how it works</a>
                 </div>
-                <p class="microcopy">All features are free. No subscription, trial counter, advertising, or sign-in.</p>
+                <p class="microcopy">Free unlimited use · No account · No advertising · No extension analytics</p>
+                <ul class="hero-proof" aria-label="Product highlights">
+                    <li>PNG, JPG &amp; SVG</li>
+                    <li>Copy image</li>
+                    <li>Full-page preview</li>
+                    <li>Print to PDF</li>
+                </ul>
             </div>
-            <div class="product-frame" aria-label="Product preview illustration">
-                <div class="product-window">
-                    <div class="product-toolbar"><span></span><span></span><span></span></div>
-                    <div class="product-content">
-                        <p class="eyebrow">Rendered locally</p>
-                        <h3>Release notes</h3>
-                        <p>A clean document preview with headings, lists, tables, links, and code blocks.</p>
-                        <pre><code>## What changed
-- Free unlimited use
-- Private local rendering
-- PNG, JPG and SVG</code></pre>
-                    </div>
+
+            <figure class="product-frame">
+                <div class="product-frame-topline">
+                    <span>Actual extension interface</span>
+                    <span>Chrome · v2.0.0</span>
                 </div>
-            </div>
+                <img src="assets/product-preview.webp" width="670" height="640" alt="Markdown to Image extension showing a Markdown document ready to convert into an image">
+                <figcaption>Write, paste, or upload Markdown without leaving the browser workflow.</figcaption>
+            </figure>
         </section>
 
-        <section id="features" class="section">
+        <section class="fact-band" aria-label="Product facts">
+            <dl class="product-facts">
+                <div><dt>Price</dt><dd>Free</dd></div>
+                <div><dt>Account</dt><dd>Not required</dd></div>
+                <div><dt>Processing</dt><dd>Local in the extension</dd></div>
+                <div><dt>Outputs</dt><dd>PNG · JPG · SVG · PDF-ready</dd></div>
+            </dl>
+        </section>
+
+        <section id="features" class="section section-intro">
             <div class="section-heading">
-                <p class="eyebrow">A focused browser tool</p>
-                <h2>From source text to a shareable artifact.</h2>
-                <p>Paste Markdown, render it, and keep the result. There are no accounts, uploads, cloud drives, usage limits, or payments.</p>
+                <p class="eyebrow">Focused by design</p>
+                <h2>Useful output, without another cloud editor.</h2>
+                <p>Markdown to Image does one job: it turns text you already have into a clean visual or a readable full-page document.</p>
             </div>
-            <div class="feature-grid">
-                <article class="feature-card"><span class="feature-number">01</span><h3>Local processing</h3><p>Markdown, uploaded text files, previews, and generated images are processed by the extension on your device.</p></article>
-                <article class="feature-card"><span class="feature-number">02</span><h3>Multiple outputs</h3><p>Copy or download PNG, JPG, and SVG, or open a full-page preview for reading and PDF printing.</p></article>
-                <article class="feature-card"><span class="feature-number">03</span><h3>Free unlimited use</h3><p>Every feature is available without a trial counter, license key, subscription, payment, or advertising.</p></article>
+
+            <div class="capability-grid">
+                <article class="capability-card capability-card-wide">
+                    <span class="feature-number">01</span>
+                    <div>
+                        <h3>Your document stays in the extension.</h3>
+                        <p>Markdown, uploaded text files, rendered HTML, previews, and generated images are processed on your device. The extension does not upload document content to a developer-operated server.</p>
+                        <p class="card-note">If your Markdown contains an externally hosted image, Chrome may still request that image from its original host.</p>
+                    </div>
+                </article>
+                <article class="capability-card">
+                    <span class="feature-number">02</span>
+                    <h3>Choose the format your next step needs.</h3>
+                    <p>Download PNG, JPG, or SVG. A generated PNG can also be copied directly to the clipboard.</p>
+                </article>
+                <article class="capability-card capability-card-dark">
+                    <span class="feature-number">03</span>
+                    <h3>Keep long documents readable.</h3>
+                    <p>Open a full browser tab with an automatic table of contents, then print or save the page as PDF.</p>
+                </article>
             </div>
         </section>
 
-        <section class="section">
-            <div class="price-panel">
-                <div>
-                    <p class="eyebrow">Simple by design</p>
-                    <p class="price">Free</p>
-                    <p class="price-details">No account. No backend. No document uploads.</p>
-                </div>
-                <a class="primary-link" data-store-link href="#" hidden>Get the extension</a>
+        <section id="how-it-works" class="section process-section">
+            <div class="section-heading process-heading">
+                <p class="eyebrow">Three short steps</p>
+                <h2>From Markdown to a shareable artifact.</h2>
             </div>
+            <ol class="process-list">
+                <li>
+                    <span class="step-number">1</span>
+                    <div><h3>Add your Markdown</h3><p>Type, paste, drag, or upload a <code>.md</code> or <code>.txt</code> file.</p></div>
+                </li>
+                <li>
+                    <span class="step-number">2</span>
+                    <div><h3>Review the rendered result</h3><p>Check headings, lists, tables, links, code blocks, and the final document length.</p></div>
+                </li>
+                <li>
+                    <span class="step-number">3</span>
+                    <div><h3>Export or open the full page</h3><p>Copy a PNG, download an image format, or open the reading view for PDF printing.</p></div>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section use-case-section">
+            <div class="use-case-copy">
+                <p class="eyebrow">Made for technical communication</p>
+                <h2>Release notes, README excerpts, code notes, and documentation snippets.</h2>
+            </div>
+            <div class="use-case-list" aria-label="Common uses">
+                <span>Release notes</span>
+                <span>Project updates</span>
+                <span>README excerpts</span>
+                <span>Code documentation</span>
+                <span>Technical posts</span>
+                <span>Printable notes</span>
+            </div>
+        </section>
+
+        <section id="faq" class="section faq-section">
+            <div class="section-heading">
+                <p class="eyebrow">Straight answers</p>
+                <h2>Frequently asked questions.</h2>
+            </div>
+            <div class="faq-list">
+                <details>
+                    <summary>Does Markdown to Image upload my document?</summary>
+                    <p>No. Document content is processed by the extension on your device and is not uploaded to a developer-operated server. If the document references a remote image, Chrome may request that image from its original host.</p>
+                </details>
+                <details>
+                    <summary>Which formats can it export?</summary>
+                    <p>You can download PNG, JPG, and SVG files. You can also copy a generated PNG to the clipboard.</p>
+                </details>
+                <details>
+                    <summary>Can it turn Markdown into PDF?</summary>
+                    <p>The extension opens Markdown in a full-page preview with a table of contents. Use Chrome's Print dialog to print the page or save it as a PDF.</p>
+                </details>
+                <details>
+                    <summary>Does it require an account or subscription?</summary>
+                    <p>No. All current features are free, there is no account, and there is no trial counter, subscription, license key, or advertising.</p>
+                </details>
+                <details>
+                    <summary>Why does it request clipboard permissions?</summary>
+                    <p>Clipboard read access is used only when you choose Paste. Clipboard write access is used only when you choose Copy Image.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="section final-cta">
+            <div>
+                <p class="eyebrow">Free · Local · Account-free</p>
+                <h2>Keep Markdown close. Share the result anywhere.</h2>
+                <p>Install Markdown to Image from the Chrome Web Store and export your first document in the format you need.</p>
+            </div>
+            <a class="primary-link" data-store-link href="https://chromewebstore.google.com/detail/markdown-to-image/oicohknclaabjbdcjhcddaklacoehlhi">Install the extension</a>
         </section>
     </main>
 
     <footer class="site-footer">
         <span>© <span data-current-year></span> <span data-product-name>Markdown to Image</span></span>
-        <nav class="footer-links" aria-label="Site links"><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+        <nav class="footer-links" aria-label="Site links">
+            <a data-store-link href="https://chromewebstore.google.com/detail/markdown-to-image/oicohknclaabjbdcjhcddaklacoehlhi">Chrome Web Store</a>
+            <a href="https://github.com/arieseven/mkd2img">GitHub</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html">Support</a>
+        </nav>
     </footer>
+
     <script src="assets/config.js?v=20260804"></script>
     <script src="assets/site.js?v=20260801"></script>
 </body>

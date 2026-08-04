@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://arieseven.github.io/markdown-to-image-site/sitemap.xml
