@@ -2,7 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://arieseven.github.io/markdown-to-image-site/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://arieseven.github.io/markdown-to-image-site/examples/</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://arieseven.github.io/markdown-to-image-site/markdown-to-png/</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://arieseven.github.io/markdown-to-image-site/about/</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://arieseven.github.io/markdown-to-image-site/changelog/</loc>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://arieseven.github.io/markdown-to-image-site/privacy.html</loc>

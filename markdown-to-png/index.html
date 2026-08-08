@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert Markdown to a high-resolution PNG locally in Chrome. Follow three steps, inspect a real output, and learn when to choose PNG, JPG, or SVG.">
+    <meta name="theme-color" content="#172033">
+    <link rel="canonical" href="https://arieseven.github.io/markdown-to-image-site/markdown-to-png/">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icon16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../assets/icon48.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../assets/icon128.png">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Markdown to Image">
+    <meta property="og:title" content="Convert Markdown to PNG Locally in Chrome">
+    <meta property="og:description" content="A free, account-free Chrome workflow for turning Markdown into a high-resolution PNG without uploading the document to a developer-operated service.">
+    <meta property="og:url" content="https://arieseven.github.io/markdown-to-image-site/markdown-to-png/">
+    <meta property="og:image" content="https://arieseven.github.io/markdown-to-image-site/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Convert Markdown to PNG Locally in Chrome">
+    <meta name="twitter:description" content="Paste Markdown, review the rendering, and download a high-resolution PNG locally in Chrome.">
+    <meta name="twitter:image" content="https://arieseven.github.io/markdown-to-image-site/assets/og-image.png">
+    <title>Convert Markdown to PNG Locally — Chrome Extension</title>
+    <link rel="stylesheet" href="../assets/site.css?v=20260808-1">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to convert Markdown to PNG locally in Chrome",
+      "description": "Use the Markdown to Image Chrome extension to render Markdown locally and download a high-resolution PNG.",
+      "url": "https://arieseven.github.io/markdown-to-image-site/markdown-to-png/",
+      "image": "https://arieseven.github.io/markdown-to-image-site/assets/examples/markdown-to-image-example-preview.webp",
+      "totalTime": "PT1M",
+      "tool": [{ "@type": "HowToTool", "name": "Markdown to Image Chrome extension" }],
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Add Markdown", "text": "Type or paste Markdown, or upload a .md or .txt file." },
+        { "@type": "HowToStep", "position": 2, "name": "Review the rendering", "text": "Convert the document and check headings, lists, tables, code blocks, links, and document length." },
+        { "@type": "HowToStep", "position": 3, "name": "Download PNG", "text": "Select PNG and download the generated high-resolution image, or copy the PNG to the clipboard." }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="brand" href="../" aria-label="Markdown to Image home"><span class="brand-mark" aria-hidden="true">M↓</span><span data-product-name>Markdown to Image</span></a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="../examples/">Examples</a>
+            <a aria-current="page" href="./">PNG guide</a>
+            <a href="../about/">About</a>
+            <a href="../changelog/">Changelog</a>
+            <a class="nav-primary" data-store-link href="https://chromewebstore.google.com/detail/markdown-to-image/oicohknclaabjbdcjhcddaklacoehlhi">Install extension</a>
+        </nav>
+    </header>
+
+    <main id="main" class="content-shell">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span>Markdown to PNG</span></nav>
+        <section class="content-hero guide-hero">
+            <div>
+                <p class="eyebrow">Markdown to PNG</p>
+                <h1>Convert Markdown to a high-resolution PNG — locally.</h1>
+                <p class="content-lead">Markdown to Image renders your document inside the Chrome extension. No account is required, and the extension does not upload Markdown to a developer-operated service.</p>
+                <div class="hero-actions">
+                    <a class="primary-link" data-store-link href="https://chromewebstore.google.com/detail/markdown-to-image/oicohknclaabjbdcjhcddaklacoehlhi">Install the free extension</a>
+                    <a class="secondary-link" href="../examples/">Inspect real outputs</a>
+                </div>
+                <p class="microcopy">PNG export uses a 3× render scale · Copy Image also writes PNG</p>
+            </div>
+            <div class="code-card" aria-label="Example Markdown input">
+                <div class="code-card-bar"><span>project-update.md</span><span>Markdown</span></div>
+                <pre><code># Project update
+
+&gt; Everything is processed locally.
+
+## Highlights
+
+- Export PNG, JPG, and SVG
+- Copy PNG to the clipboard
+- Open a full-page preview
+
+`No account required.`</code></pre>
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="steps-heading">
+            <div class="section-heading compact-heading">
+                <p class="eyebrow">Three steps</p>
+                <h2 id="steps-heading">From Markdown to PNG in about a minute.</h2>
+            </div>
+            <ol class="editorial-steps">
+                <li><span>01</span><div><h3>Add the document</h3><p>Type or paste Markdown, drag a file into the extension, or select a local <code>.md</code> or <code>.txt</code> file.</p></div></li>
+                <li><span>02</span><div><h3>Review the rendered result</h3><p>Check headings, code blocks, tables, links, lists, images, and the total document length before exporting.</p></div></li>
+                <li><span>03</span><div><h3>Choose PNG and download</h3><p>Select PNG for a lossless raster file. Use Copy Image when the destination accepts a clipboard image.</p></div></li>
+            </ol>
+        </section>
+
+        <section class="content-section evidence-layout reverse-layout" aria-labelledby="result-heading">
+            <figure class="evidence-frame evidence-frame-tall">
+                <img src="../assets/examples/markdown-to-image-example-preview.webp" width="1200" height="1716" alt="High-resolution PNG exported from a Markdown document" loading="lazy">
+                <figcaption>Real PNG output. Original dimensions: 2400 × 3432 pixels.</figcaption>
+            </figure>
+            <div class="section-copy sticky-copy">
+                <p class="eyebrow">Real result</p>
+                <h2 id="result-heading">A 2400-pixel-wide output from an 800-pixel layout.</h2>
+                <p>The extension captures the rendered paper surface at 3× scale. This keeps headings, code, and body text crisp when the image is shared or placed in documentation.</p>
+                <p>Very long Markdown produces a tall image. For long-form reading, use the full-page preview and Chrome's print dialog instead.</p>
+                <a class="text-link" href="../assets/examples/markdown-to-image-example.png" download>Download the original PNG · 509 KB</a>
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="format-heading">
+            <div class="section-heading compact-heading">
+                <p class="eyebrow">Choose the destination first</p>
+                <h2 id="format-heading">PNG, JPG, SVG, or PDF-ready preview?</h2>
+            </div>
+            <div class="comparison-table" role="region" aria-label="Output format comparison" tabindex="0">
+                <table>
+                    <thead><tr><th>Output</th><th>Best fit</th><th>Important behavior</th></tr></thead>
+                    <tbody>
+                        <tr><th>PNG</th><td>Documentation, screenshots, social posts, clipboard</td><td>Lossless raster output at 3× render scale.</td></tr>
+                        <tr><th>JPG</th><td>Smaller raster sharing when transparency is not needed</td><td>Uses JPEG quality 0.92 from the same generated canvas.</td></tr>
+                        <tr><th>SVG</th><td>Placing the rendered image inside an SVG-aware workflow</td><td>Current export embeds the rendered PNG inside an SVG container; text is not converted to editable vector paths.</td></tr>
+                        <tr><th>PDF-ready</th><td>Long documents and print layouts</td><td>Open the full-page preview, then use Chrome Print or Save PDF.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-section question-grid" aria-labelledby="questions-heading">
+            <div class="section-heading compact-heading">
+                <p class="eyebrow">Practical answers</p>
+                <h2 id="questions-heading">What to know before exporting.</h2>
+            </div>
+            <article><h3>Does the extension upload my Markdown?</h3><p>No. Markdown, uploaded text files, rendered HTML, and generated images are processed by the extension on the device.</p></article>
+            <article><h3>Can remote images appear in the PNG?</h3><p>Chrome may request images from their original hosts. Some hosts block cross-origin rendering, which can prevent an image from appearing in the export.</p></article>
+            <article><h3>Is an account required?</h3><p>No. Version 2.0.0 has no account, subscription, payment, license key, advertising, or extension analytics.</p></article>
+            <article><h3>What if the PNG is too tall?</h3><p>Open the full-page preview instead. It includes a table of contents and can be printed or saved as PDF through Chrome.</p></article>
+        </section>
+
+        <section class="section final-cta content-final-cta">
+            <div>
+                <p class="eyebrow">No upload · No account</p>
+                <h2>Export your next Markdown document locally.</h2>
+                <p>Install the extension, paste a document, and choose PNG when you need a crisp shareable image.</p>
+            </div>
+            <a class="primary-link" data-store-link href="https://chromewebstore.google.com/detail/markdown-to-image/oicohknclaabjbdcjhcddaklacoehlhi">Install from Chrome Web Store</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© <span data-current-year></span> <span data-product-name>Markdown to Image</span></span>
+        <nav class="footer-links" aria-label="Site links">
+            <a href="../">Home</a><a href="../examples/">Examples</a><a href="../about/">About</a><a href="../changelog/">Changelog</a><a href="../privacy.html">Privacy</a><a href="../support.html">Support</a>
+        </nav>
+    </footer>
+    <script src="../assets/config.js?v=20260804"></script>
+    <script src="../assets/site.js?v=20260801"></script>
+</body>
+</html>
